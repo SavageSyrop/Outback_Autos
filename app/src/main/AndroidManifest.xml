@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Outback_Autos">
         <activity
+            android:name=".AboutAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".StartActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

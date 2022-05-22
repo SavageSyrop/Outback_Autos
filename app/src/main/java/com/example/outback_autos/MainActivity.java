@@ -3,6 +3,7 @@ package com.example.outback_autos;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -35,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch(item.getItemId()){
             case R.id.menuAbout:{
-
+                Intent intent = new Intent(MainActivity.this, AboutAppActivity.class);
+                startActivity(intent);
                 break;
             }
 
