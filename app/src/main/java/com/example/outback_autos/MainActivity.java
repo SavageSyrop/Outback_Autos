@@ -56,6 +56,35 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void openYoutube(View view){
+        Uri webpage = Uri.parse("https://www.youtube.com/channel/UCQZ__ST6OA5GBB1wqlFMeTA");
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (checkIntent(webIntent)) {
+            startActivity(webIntent);
+        }
+    }
+
+    public void openInstagram(View view){
+        Uri webpage = Uri.parse("https://www.instagram.com/westsideauto");
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (checkIntent(webIntent)) {
+            startActivity(webIntent);
+        }
+    }
+
+    public void openFacebook(View view){
+        Uri webpage = Uri.parse("https://www.facebook.com/westsideautowholesale");
+        Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+        if (checkIntent(webIntent)) {
+            startActivity(webIntent);
+        }
+    }
+
+    public void tempStartSelect(View view){
+        Intent intent = new Intent(MainActivity.this, SelectModelActivity.class);
+        startActivity(intent);
+    }
+
     public Boolean checkIntent(Intent intent) {
         PackageManager packageManager = getPackageManager();
         List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);

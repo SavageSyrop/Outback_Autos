@@ -15,4 +15,13 @@
     7. Open our Instagram\n
     8. Read About app\n
     9. Read this\n</string>
+    <string name="brand_info">Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand, and luxury cars under its Lincoln luxury brand. </string>
+    <string name="spinner_hint">Choose car...</string>
+    <string-array name="FordList">
+        <item>Mustang</item>
+        <item>Mondeo</item>
+        <item>F150</item>
+        <item>Transit</item>
+        <item>Focus</item>
+    </string-array>
 </resources>
