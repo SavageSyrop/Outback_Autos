@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Outback Autos</string>
+    <string name="brand_name">Brand</string>
+    <string name="model_name">Model</string>
     <string name="about">About</string>
     <string name="how_to_use">How to use</string>
     <string name="about_app">"Development start: 22.05.22
@@ -10,11 +12,12 @@
     2. Open our website\n
     3. Open our dealership location on the map\n
     4. Watch cars info\n
-    5. Open our Youtube\n
-    6. Open our Facebook\n
-    7. Open our Instagram\n
-    8. Read About app\n
-    9. Read this\n</string>
+        5. Watch if car is available\n
+    6. Open our Youtube\n
+    7. Open our Facebook\n
+    8. Open our Instagram\n
+    9. Read About app\n
+    10. Read this\n</string>
     <string name="brand_info">Ford Motor Company (commonly known as Ford) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand, and luxury cars under its Lincoln luxury brand. </string>
     <string name="spinner_hint">Choose car...</string>
     <string-array name="FordList">

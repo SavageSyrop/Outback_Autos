@@ -3,20 +3,18 @@ package com.example.outback_autos;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
-public class SelectModelActivity extends AppCompatActivity {
+public class ModelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_model);
+        setContentView(R.layout.activity_model);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.brand_name);
+        toolbar.setTitle(R.string.model_name);
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 
@@ -25,7 +23,6 @@ public class SelectModelActivity extends AppCompatActivity {
 
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
@@ -33,10 +30,5 @@ public class SelectModelActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void openModel(View view){
-        Intent intent = new Intent(SelectModelActivity.this, ModelActivity.class);
-        startActivity(intent);
     }
 }

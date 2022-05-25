@@ -40,6 +40,14 @@
           android:layout_gravity="center">
       </TextView>
 
+      <ImageView
+          android:id="@+id/kaktoos"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_gravity="center_horizontal"
+          app:srcCompat="@drawable/kaktoos" />
+
       <TextView
           android:id="@+id/text_htu_text"
           android:layout_width="wrap_content"

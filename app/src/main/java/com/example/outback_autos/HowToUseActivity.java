@@ -14,6 +14,7 @@ public class HowToUseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_how_to_use);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.htu_toolbar);
+        toolbar.setTitle("How to use");
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 

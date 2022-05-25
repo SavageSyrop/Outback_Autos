@@ -27,18 +27,14 @@
                 android:titleTextColor="@color/white"
                 android:theme="@style/Theme.Outback_Autos"/>
 
-            <TextView
-                android:id="@+id/text_about_title"
-                android:layout_width="wrap_content"
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
                 android:layout_marginTop="10dp"
-                android:text="@string/app_name"
-                android:textAlignment="center"
-                android:textColor="#C6BA00"
-                android:textSize="24dp"
-                android:textStyle="bold"
-                android:layout_gravity="center">
-            </TextView>
+                app:srcCompat="@drawable/logo" />
 
             <TextView
                 android:id="@+id/text_about_text"
