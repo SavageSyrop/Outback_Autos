@@ -17,4 +17,130 @@
         android:titleTextColor="@color/white"
         android:elevation="10dp"/>
 
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/model_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mustang"
+        android:textSize="34dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Характеристики"
+        android:textSize="22dp"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Макс. мощность"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/power_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="188 л.с."
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Макс. скорость"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/speed_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="206 км/ч"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Расход топлива"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/rashod_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.2 л на 100 км"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Макс. крутящий момент"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/oborot_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3400-4600 об./мин"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дорожный просвет"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/height_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="213 мм."
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Привод"
+                android:textColor="@color/grey"/>
+
+            <TextView
+                android:id="@+id/privod_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Постоянный полный привод"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
 </LinearLayout>

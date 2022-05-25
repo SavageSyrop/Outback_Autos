@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="Ford"
                 android:textSize="40sp"
+                android:textColor="@color/black"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="50dp"
@@ -68,7 +69,8 @@
             android:justificationMode="inter_word"
             android:padding="10dp"
             android:textStyle="bold"
-            android:text="Choose car model..." />
+            android:text="Choose car model..."
+            android:textColor="@color/black"/>
 
         <Spinner
             android:id="@+id/spinner"
