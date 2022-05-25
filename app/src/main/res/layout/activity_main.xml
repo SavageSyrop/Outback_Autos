@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -12,15 +14,117 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:background="#21207A"
+        android:title="@string/app_name"
         android:titleTextColor="@color/white"
-        android:title="@string/app_name" />
+        android:elevation="10dp"/>
 
     <LinearLayout
+        android:id="@+id/speed_panel_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/toolbar">
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:background="#21207A"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/speed_panel_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:text="Speed panel"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/call_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/call"
+                    android:onClick="callIntent"
+                    />
+
+                <TextView
+                    android:id="@+id/call_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Call us"
+                    android:textSize="14dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:onClick="callIntent"
+                    />
 
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/website_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:onClick="webIntent"
+                    android:background="@drawable/web"
+                    />
+
+                <TextView
+                    android:id="@+id/website_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:text="Our website"
+                    android:onClick="webIntent"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/map_button"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:onClick="mapIntent"
+                    android:background="@drawable/map"/>
+
+                <TextView
+                    android:id="@+id/map_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:text="OA on map"
+                    android:onClick="mapIntent"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

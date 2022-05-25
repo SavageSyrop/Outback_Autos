@@ -3,7 +3,7 @@
     <style name="Theme.Outback_Autos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#21207A</item>
-        <item name="colorPrimaryVariant">#28279B</item>
+        <item name="colorPrimaryVariant">#21207A</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#2196F3</item>
