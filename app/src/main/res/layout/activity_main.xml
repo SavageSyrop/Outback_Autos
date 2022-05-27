@@ -5,6 +5,7 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical|fill_vertical"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,30 +15,30 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:background="#21207A"
+        android:elevation="10dp"
         android:title="@string/app_name"
-        android:titleTextColor="@color/white"
-        android:elevation="10dp"/>
+        android:titleTextColor="@color/white" />
 
     <LinearLayout
         android:id="@+id/speed_panel_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#21207A"
         android:orientation="vertical"
         android:paddingTop="10dp"
-        android:background="#21207A"
         android:paddingBottom="10dp">
 
         <TextView
             android:id="@+id/speed_panel_label"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="textStart"
             android:paddingLeft="20dp"
             android:paddingBottom="10dp"
             android:text="Speed panel"
-            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
             android:textSize="18dp"
-            android:textColor="@color/white"/>
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,19 +57,17 @@
                     android:layout_height="28dp"
                     android:layout_gravity="center"
                     android:background="@drawable/call"
-                    android:onClick="callIntent"
-                    />
+                    android:onClick="callIntent" />
 
                 <TextView
                     android:id="@+id/call_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="callIntent"
                     android:text="Call us"
-                    android:textSize="14dp"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:onClick="callIntent"
-                    />
+                    android:textSize="14dp" />
 
 
             </LinearLayout>
@@ -77,27 +76,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/website_button"
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_gravity="center"
-                    android:onClick="webIntent"
                     android:background="@drawable/web"
-                    />
+                    android:onClick="webIntent" />
 
                 <TextView
                     android:id="@+id/website_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="14dp"
-                    android:text="Our website"
                     android:onClick="webIntent"
-                    android:textColor="@color/white"/>
+                    android:text="Our website"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -111,125 +108,210 @@
                     android:layout_width="28dp"
                     android:layout_height="28dp"
                     android:layout_gravity="center"
-                    android:onClick="mapIntent"
-                    android:background="@drawable/map"/>
+                    android:background="@drawable/map"
+                    android:onClick="mapIntent" />
 
                 <TextView
                     android:id="@+id/map_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
-                    android:textSize="14dp"
-                    android:text="OA on map"
                     android:onClick="mapIntent"
-                    android:textColor="@color/white"/>
+                    android:text="OA on map"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
 
-
-    <TableLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="tempStartSelect"
-                android:text="Button" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </TableLayout>
-
-    <LinearLayout
-        android:id="@+id/networks_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#21207A"
-        android:orientation="vertical"
-
-        android:paddingBottom="10dp">
-
-        <TextView
-            android:id="@+id/networks_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="15dp"
-            android:paddingTop="5dp"
-            android:text="Follow us"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:textStyle="bold" />
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We sell these brands..."
+                android:textAlignment="center"
+                android:textColor="#21207A"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/chevroletButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#fff"
+                        android:onClick="startSelect"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/chevrolet" />
+
+                    <ImageButton
+                        android:id="@+id/fordButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#fff"
+                        android:onClick="startSelect"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ford" />
+
+                    <ImageButton
+                        android:id="@+id/hyundaiButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#fff"
+                        android:onClick="startSelect"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/hyundai" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/opelButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#fff"
+                        android:onClick="startSelect"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/opel" />
+
+                    <ImageButton
+                        android:id="@+id/subaruButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#fff"
+                        android:onClick="startSelect"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/subaru" />
+
+                    <ImageButton
+                        android:id="@+id/volkswagenButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="#fff"
+                        android:onClick="startSelect"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/volkswagen" />
+                </TableRow>
+            </TableLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <LinearLayout
+                android:id="@+id/networks_layout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_height="wrap_content"
 
-                <ImageButton
-                    android:id="@+id/youtube_button"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/youtube"
-                    android:onClick="openYoutube" />
-            </LinearLayout>
+                android:background="#21207A"
+                android:orientation="vertical"
+                android:paddingBottom="10dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/networks_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="15dp"
+                    android:text="Follow us"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
-                <ImageButton
-                    android:id="@+id/instagram_button"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/insta"
-                    android:onClick="openInstagram" />
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/facebook_button"
-                    android:layout_width="28dp"
-                    android:layout_height="28dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/facebook"
-                    android:onClick="openFacebook" />
+                        <ImageButton
+                            android:id="@+id/youtube_button"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/youtube"
+                            android:onClick="openYoutube" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/instagram_button"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/insta"
+                            android:onClick="openInstagram" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/facebook_button"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/facebook"
+                            android:onClick="openFacebook" />
+                    </LinearLayout>
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

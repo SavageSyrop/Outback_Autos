@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main_layout"
+    android:id="@+id/model_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -23,16 +23,34 @@
         android:layout_height="250dp"
         app:srcCompat="@drawable/background" />
 
-    <TextView
-        android:id="@+id/model_label"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mustang"
-        android:textSize="34dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"/>
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/model_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="Mustang"
+            android:textColor="@color/black"
+            android:textSize="34dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="20dp"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="34dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -63,7 +81,7 @@
                 android:text="Макс. мощность"
                 android:textColor="@color/grey"/>
             <TextView
-                android:id="@+id/power_info"
+                android:id="@+id/power_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="188 л.с."
@@ -76,7 +94,7 @@
                 android:textColor="@color/grey"/>
 
             <TextView
-                android:id="@+id/speed_info"
+                android:id="@+id/speed_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="206 км/ч"
@@ -89,7 +107,7 @@
                 android:textColor="@color/grey"/>
 
             <TextView
-                android:id="@+id/rashod_info"
+                android:id="@+id/fuel_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="6.2 л на 100 км"
@@ -108,7 +126,7 @@
                 android:textColor="@color/grey"/>
 
             <TextView
-                android:id="@+id/oborot_info"
+                android:id="@+id/torque_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3400-4600 об./мин"
@@ -121,7 +139,7 @@
                 android:textColor="@color/grey"/>
 
             <TextView
-                android:id="@+id/height_info"
+                android:id="@+id/clearance_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="213 мм."
@@ -134,7 +152,7 @@
                 android:textColor="@color/grey"/>
 
             <TextView
-                android:id="@+id/privod_info"
+                android:id="@+id/drive_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Постоянный полный привод"

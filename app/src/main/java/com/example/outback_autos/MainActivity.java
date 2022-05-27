@@ -80,8 +80,28 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void tempStartSelect(View view){
+    public void startSelect(View view){
         Intent intent = new Intent(MainActivity.this, SelectModelActivity.class);
+        switch (view.getId()) {
+            case R.id.fordButton:
+                intent.putExtra("brand", "Ford");
+                break;
+            case R.id.chevroletButton:
+                intent.putExtra("brand", "Chevrolet");
+                break;
+            case R.id.hyundaiButton:
+                intent.putExtra("brand", "Hyundai");
+                break;
+            case R.id.opelButton:
+                intent.putExtra("brand", "Opel");
+                break;
+            case R.id.subaruButton:
+                intent.putExtra("brand", "Subaru");
+                break;
+            case R.id.volkswagenButton:
+                intent.putExtra("brand", "Volkswagen");
+                break;
+        }
         startActivity(intent);
     }
 
