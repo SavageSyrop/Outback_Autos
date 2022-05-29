@@ -133,7 +133,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
@@ -142,94 +142,259 @@
                 android:textAlignment="center"
                 android:textColor="#21207A"
                 android:layout_marginTop="15dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginBottom="15dp"
                 android:textSize="30dp"
                 android:textStyle="bold" />
 
-            <TableLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="5dp"
-                android:layout_marginLeft="5dp">
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="5dp">
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:gravity="center_vertical">
-
-                    <ImageButton
-                        android:id="@+id/chevroletButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#fff"
-                        android:onClick="startSelect"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/chevrolet" />
-
-                    <ImageButton
-                        android:id="@+id/fordButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#fff"
-                        android:onClick="startSelect"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/ford" />
-
-                    <ImageButton
-                        android:id="@+id/hyundaiButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#fff"
-                        android:onClick="startSelect"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/hyundai" />
-                </TableRow>
-
-                <TableRow
+                <ImageButton
+                    android:id="@+id/alfa_romeoButton"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical">
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/alfa_romeo" />
 
-                    <ImageButton
-                        android:id="@+id/opelButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#fff"
-                        android:onClick="startSelect"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/opel" />
+                <ImageButton
+                    android:id="@+id/chevroletButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/chevrolet" />
 
-                    <ImageButton
-                        android:id="@+id/subaruButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#fff"
-                        android:onClick="startSelect"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/subaru" />
+                <ImageButton
+                    android:id="@+id/bmwButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bmw" />
+            </LinearLayout>
 
-                    <ImageButton
-                        android:id="@+id/volkswagenButton"
-                        android:layout_width="match_parent"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:background="#fff"
-                        android:onClick="startSelect"
-                        android:scaleType="fitCenter"
-                        app:srcCompat="@drawable/volkswagen" />
-                </TableRow>
-            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="5dp">
+                <ImageButton
+                    android:id="@+id/dodgeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/dodge" />
+
+                <ImageButton
+                    android:id="@+id/fordButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ford" />
+
+                <ImageButton
+                    android:id="@+id/hondaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/honda" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="5dp">
+                <ImageButton
+                    android:id="@+id/hyundaiButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/hyundai" />
+
+                <ImageButton
+                    android:id="@+id/koenigseggButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/koenigsegg" />
+
+                <ImageButton
+                    android:id="@+id/mercedesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mercedes" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="5dp">
+                <ImageButton
+                    android:id="@+id/mitsubishiButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/mitsubishi" />
+
+                <ImageButton
+                    android:id="@+id/nissanButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/nissan" />
+
+                <ImageButton
+                    android:id="@+id/opelButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/opel" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="5dp">
+                <ImageButton
+                    android:id="@+id/porscheButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/porsche" />
+
+                <ImageButton
+                    android:id="@+id/skodaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/skoda" />
+
+                <ImageButton
+                    android:id="@+id/subaruButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/subaru" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginBottom="15dp">
+                <ImageButton
+                    android:id="@+id/uazButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/uaz" />
+
+                <ImageButton
+                    android:id="@+id/volkswagenButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/volkswagen" />
+
+                <ImageButton
+                    android:id="@+id/volvoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="#fff"
+                    android:onClick="startSelect"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/volvo" />
+            </LinearLayout>
+
 
             <Space
                 android:layout_width="match_parent"

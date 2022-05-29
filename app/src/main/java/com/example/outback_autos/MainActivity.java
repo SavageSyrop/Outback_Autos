@@ -83,23 +83,59 @@ public class MainActivity extends AppCompatActivity {
     public void startSelect(View view){
         Intent intent = new Intent(MainActivity.this, SelectModelActivity.class);
         switch (view.getId()) {
-            case R.id.fordButton:
-                intent.putExtra("brand", "Ford");
+            case R.id.alfa_romeoButton:
+                intent.putExtra("brand", "Alfa Romeo");
+                break;
+            case R.id.bmwButton:
+                intent.putExtra("brand", "BMW");
                 break;
             case R.id.chevroletButton:
                 intent.putExtra("brand", "Chevrolet");
                 break;
+            case R.id.dodgeButton:
+                intent.putExtra("brand", "Dodge");
+                break;
+            case R.id.fordButton:
+                intent.putExtra("brand", "Ford");
+                break;
+            case R.id.hondaButton:
+                intent.putExtra("brand", "Honda");
+                break;
             case R.id.hyundaiButton:
                 intent.putExtra("brand", "Hyundai");
+                break;
+            case R.id.koenigseggButton:
+                intent.putExtra("brand", "Koenigsegg");
+                break;
+            case R.id.mercedesButton:
+                intent.putExtra("brand", "Mercedes");
+                break;
+            case R.id.mitsubishiButton:
+                intent.putExtra("brand", "Mitsubishi");
+                break;
+            case R.id.nissanButton:
+                intent.putExtra("brand", "Nissan");
                 break;
             case R.id.opelButton:
                 intent.putExtra("brand", "Opel");
                 break;
+            case R.id.porscheButton:
+                intent.putExtra("brand", "Porsche");
+                break;
+            case R.id.skodaButton:
+                intent.putExtra("brand", "Skoda");
+                break;
             case R.id.subaruButton:
                 intent.putExtra("brand", "Subaru");
                 break;
+            case R.id.uazButton:
+                intent.putExtra("brand", "UAZ");
+                break;
             case R.id.volkswagenButton:
                 intent.putExtra("brand", "Volkswagen");
+                break;
+            case R.id.volvoButton:
+                intent.putExtra("brand", "Volvo");
                 break;
         }
         startActivity(intent);
