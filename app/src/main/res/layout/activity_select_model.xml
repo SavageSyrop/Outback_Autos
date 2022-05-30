@@ -40,9 +40,10 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="50dp"
                     android:text="Ford"
-                    android:textColor="@color/black"
+                    android:textColor="#21207A"
                     android:textSize="40sp"
-                    android:textStyle="bold" />
+
+                    android:textStyle="bold"/>
 
                 <ImageView
                     android:id="@+id/brand_pic"
@@ -61,8 +62,11 @@
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
                 android:padding="10dp"
+                android:textColor="@color/black"
                 android:text="@string/brand_info"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:id="@+id/spinner_label"
@@ -70,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:justificationMode="inter_word"
                 android:padding="10dp"
-                android:text="Choose car model..."
+                android:text="Choose car model:"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -78,11 +82,14 @@
             <Spinner
                 android:id="@+id/spinner"
                 android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
                 android:layout_height="wrap_content"
                 android:entries="@array/FordList"
-                android:paddingLeft="5dp"
                 android:prompt="@string/spinner_hint"
-                android:spinnerMode="dialog" />
+                android:spinnerMode="dialog"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_spinner"/>
 
             <Button
                 android:id="@+id/button"
@@ -92,6 +99,7 @@
                 android:layout_marginTop="10dp"
                 android:onClick="openModel"
                 android:padding="5dp"
+                android:layout_marginBottom="15dp"
                 android:text="Open" />
         </LinearLayout>
     </ScrollView>

@@ -1,6 +1,8 @@
 package com.example.outback_autos;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -18,10 +20,10 @@ public class StartActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeIntent = new Intent(StartActivity.this,MainActivity.class);
-                startActivity(homeIntent);
-                finish();
+                    Intent homeIntent = new Intent(StartActivity.this,LoginActivity.class);
+                    startActivity(homeIntent);
+                    finish();
             }
-        },3000);
+        },2000);
     }
 }

@@ -27,19 +27,6 @@
           android:titleTextColor="@color/white"
           android:theme="@style/Theme.Outback_Autos"/>
 
-      <TextView
-          android:id="@+id/text_htu_title"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
-          android:text="What can you do?"
-          android:textAlignment="center"
-          android:textColor="#C6BA00"
-          android:textSize="24dp"
-          android:textStyle="bold"
-          android:layout_gravity="center">
-      </TextView>
-
       <ImageView
           android:id="@+id/kaktoos"
           android:layout_width="wrap_content"
@@ -47,6 +34,28 @@
           android:layout_marginTop="10dp"
           android:layout_gravity="center_horizontal"
           app:srcCompat="@drawable/kaktoos" />
+
+      <TextView
+          android:id="@+id/userGreet"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAlignment="center"
+          android:textSize="44dp"
+          android:textStyle="bold"
+          android:textColor="#005A0F"
+          android:text="Hey, username!" />
+
+      <TextView
+          android:id="@+id/text_htu_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:text="In this app you can..."
+          android:textAlignment="center"
+          android:textColor="#21207A"
+          android:textSize="24dp"
+          android:textStyle="bold"/>
 
       <TextView
           android:id="@+id/text_htu_text"

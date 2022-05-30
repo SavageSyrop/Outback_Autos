@@ -8,4 +8,12 @@
         android:id="@+id/menuHowToUse"
         android:title="How to use" />
 
+    <item
+        android:id="@+id/exit"
+        android:title="Exit" />
+
+    <item
+        android:id="@+id/deleteAccount"
+        android:title="Delete account" />
+
 </menu>

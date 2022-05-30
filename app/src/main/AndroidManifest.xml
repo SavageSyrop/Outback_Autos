@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Outback_Autos">
         <activity
+            android:name=".DeleteAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ModelActivity"
             android:exported="false" />
         <activity

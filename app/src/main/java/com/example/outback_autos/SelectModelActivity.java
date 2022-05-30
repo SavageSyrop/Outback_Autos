@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -63,6 +64,14 @@ public class SelectModelActivity extends AppCompatActivity {
             spinner = (Spinner) findViewById(R.id.spinner);
             spinner.setAdapter(modelsAdapter);
         }
+
+        spinner.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                ((TextView) spinner.getSelectedView()).setTextColor(Color.WHITE);
+            }
+        });
+
     }
 
     private ArrayAdapter<String> createSpinnerAdapter(String[] listItems) {

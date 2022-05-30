@@ -3,7 +3,9 @@ package com.example.outback_autos;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
@@ -18,7 +20,7 @@ import java.util.List;
 
 
 public class MainActivity extends AppCompatActivity {
-
+SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setOverflowIcon(getResources().getDrawable(R.drawable.ic_more));
+
+        sharedPreferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE);
     }
 
 
@@ -169,9 +173,28 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+
+            case R.id.exit:{
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("Remember",false);
+                editor.commit();
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            }
+
+            case R.id.deleteAccount:{
+                Intent intent = new Intent(MainActivity.this, DeleteAccountActivity.class);
+                startActivity(intent);
+                finish();
+                break;
+            }
         }
         return true;
     }
+
+
 
 
 }

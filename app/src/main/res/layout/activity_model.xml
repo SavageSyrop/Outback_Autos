@@ -35,7 +35,7 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:text="Mustang"
-            android:textColor="@color/black"
+            android:textColor="#21207A"
             android:textSize="34dp"
             android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
             android:textAlignment="textEnd"
             android:layout_marginRight="20dp"
             android:text="Price"
-            android:textColor="@color/black"
+            android:textColor="#118C4F"
             android:textSize="34dp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -55,9 +55,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Характеристики"
+        android:text="Specifications"
         android:textSize="22dp"
-        android:textColor="@color/grey"
+        android:textColor="@color/black"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"/>
@@ -65,99 +65,152 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp">
+        android:weightSum="3"
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="6">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Макс. мощность"
-                android:textColor="@color/grey"/>
+                android:text="Horsepower"
+                android:textColor="#21207A"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/power_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="188 л.с."
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Макс. скорость"
-                android:textColor="@color/grey"/>
+                android:text="Max. speed"
+                android:textColor="#21207A"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/speed_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="206 км/ч"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Расход топлива"
-                android:textColor="@color/grey"/>
+                android:text="Fuel consumption"
+                android:textColor="#21207A"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/fuel_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="6.2 л на 100 км"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight=".5"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="6">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Макс. крутящий момент"
-                android:textColor="@color/grey"/>
+                android:text="Max. torque"
+                android:textColor="#21207A"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/torque_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="3400-4600 об./мин"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Дорожный просвет"
-                android:textColor="@color/grey"/>
+                android:text="Clearance"
+                android:textColor="#21207A"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/clearance_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="213 мм."
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Привод"
-                android:textColor="@color/grey"/>
+                android:text="Drive"
+                android:textColor="#21207A"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/drive_label"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Постоянный полный привод"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
         </LinearLayout>
+
     </LinearLayout>
 
 

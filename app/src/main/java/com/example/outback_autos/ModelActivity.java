@@ -62,13 +62,13 @@ public class ModelActivity extends AppCompatActivity {
             ArrayList<String> data = carInfoDBHelper.getCarInfoRecords(CarInfoContract.CarInfoEntry.MODEL + "=?", new String[] {chosenModel}).get(0);
             model.setText(data.get(2));
             image.setImageDrawable(getResources().getDrawable( view.getContext().getResources().getIdentifier(data.get(3), "drawable", view.getContext().getPackageName())));
-            power.setText(data.get(4));
-            speed.setText(data.get(5));
-            fuel.setText(data.get(6));
-            torque.setText(data.get(7));
-            clearance.setText(data.get(8));
+            power.setText(data.get(4)+" h.p.");
+            speed.setText(data.get(5)+" km/h");
+            fuel.setText(data.get(6)+" per 100 km");
+            torque.setText(data.get(7)+ " rpm");
+            clearance.setText(data.get(8)+ " mm");
             drive.setText(data.get(9));
-            price.setText(data.get(10));
+            price.setText(data.get(10)+" $");
         }
 
     }
